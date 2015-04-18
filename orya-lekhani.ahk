@@ -24,6 +24,8 @@ K_UseContext = 2  ; Causes uncaptured character keys to be included in the conte
 ;________________________________________________________________________________________________________________
 
 OnLoadScript:	; InKeyLib will call this subroutine just once, when the script is first loaded, for any script initialization.
+OryaCons := "[କ-ହ]"
+
 /*
 	usingMapChillu2Base := usingMap("ൻ ന", "ൺ ണ", "ർ ര", "ൽ ല", "ൾ ള", "ൿ ക", "ം മ", "ഋ റ")
 	SetOfLettersExceptSA := "[അ-ഷഹ]"
@@ -33,4 +35,82 @@ OnLoadScript:	; InKeyLib will call this subroutine just once, when the script is
 */
 return
 ;________________________________________________________________________________________________________________
+
+$a::Send("ଅ")
+
+$+a::InCase(After(OryaCons) thenSend("ା"))
+  ||Send("ଆ")
+
+$s::InCase(After(OryaCons) thenSend("୍ସ"))
+  ||Send("ସ")
+
+$+s::InCase(After(OryaCons) thenSend("୍ଶ"))
+  ||Send("ଶ")
+
+$d::InCase(After(OryaCons) thenSend("୍ଦ"))
+  ||Send("ଦ")
+
+$+d::InCase(After(OryaCons) thenSend("୍ଡ"))
+  ||Send("ଡ")
+
+$f::Beep()
+
+$+f::InCase(After(OryaCons) thenSend("୍ଫ"))
+  ||Send("ଫ")
+
+$g::InCase(After(OryaCons) thenSend("୍ଗ"))
+  ||Send("ଗ")
+
+$+g::InCase(After(OryaCons) thenSend("୍ଘ"))
+  ||Send("ଘ")
+
+$h::InCase(After(OryaCons) thenSend("୍ହ"))
+  ||Send("ହ")
+
+$+h::Send("ଃ")
+
+$j::InCase(After(OryaCons) thenSend("୍ଜ"))
+  ||Send("ଜ")
+
+$+j::InCase(After(OryaCons) thenSend("୍ଯ"))
+  ||Send("ଯ")
+
+$k::InCase(After(OryaCons) thenSend("୍କ"))
+  ||Send("କ")
+
+$+k::InCase(After(OryaCons) thenSend("୍ଖ"))
+  ||Send("ଖ")
+
+$l::InCase(After(OryaCons) thenSend("୍ଳ"))
+  ||Send("ଳ")
+
+$+l::InCase(After(OryaCons) thenSend("୍ଲ"))
+  ||Send("ଲ")
+  
+$e::InCase(After(OryaCons) thenSend("େ"))
+  ||Send("ଏ")
+
+$i::InCase(After(OryaCons) thenSend("ି"))
+  ||Send("ଇ")
+
+$o::InCase(After(OryaCons) thenSend("ୋ"))
+  ||Send("ଓ")
+
+$u::InCase(After(OryaCons) thenSend("ୁ"))
+  ||Send("ଉ")
+
+$+e::InCase(After(OryaCons) thenSend("ୈ"))
+  ||Send("ଐ")
+
+$+o::InCase(After(OryaCons) thenSend("ୌ"))
+  ||Send("ଔ")
+
+$+u::InCase(After(OryaCons) thenSend("ୂ"))
+  ||Send("ଊ")
+
+$c::InCase(After(OryaCons) thenSend("୍ଚ"))
+  ||Send("ଚ")
+
+$+c::InCase(After(OryaCons) thenSend("୍ଛ"))
+  ||Send("ଛ")
 
