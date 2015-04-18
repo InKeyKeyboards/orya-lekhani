@@ -95,7 +95,8 @@ $+q::InCase(After(OryaCons) thenSend("୍ଢ଼"))
 
 $w::Beep()
 
-$+w::Send("****")
+$+w::InCase(After(OryaCons) thenSend("୍ୱ"))
+  ||Send("ୱ")
   
 $e::InCase(After(OryaCons) thenSend("େ"))
   ||Send("ଏ")
@@ -145,9 +146,79 @@ $p::InCase(After(OryaCons) thenSend("୍ପ"))
 $+p::InCase(After(OryaCons) thenSend("୍ଫ"))
   ||Send("ଫ")
 
+$z::Send("୍")
+
+$+z::Send("****")
+
+$x::Send("****")
+
+$+x::Send("ଁ")
+
 $c::InCase(After(OryaCons) thenSend("୍ଚ"))
   ||Send("ଚ")
 
 $+c::InCase(After(OryaCons) thenSend("୍ଛ"))
   ||Send("ଛ")
 
+$v::Beep()
+
+$+v::InCase(After(OryaCons) thenSend("୍ୱ"))
+  ||Send("ୱ")
+
+$b::InCase(After(OryaCons) thenSend("୍ବ"))
+  ||Send("ବ")
+
+$+b::InCase(After(OryaCons) thenSend("୍ବ"))
+  ||Send("ବ")
+
+$n::InCase(After(OryaCons) thenSend("୍ନ"))
+  ||Send("ନ")
+
+$+n::InCase(After(OryaCons) thenSend("୍ଣ"))
+  ||Send("ଣ")
+
+$m::InCase(After(OryaCons) thenSend("୍ମ"))
+  ||Send("ମ")
+
+$+m::Send("ଂ")
+
+$0::InCase(Map("\ ୦"))
+  ||InCase(After("[୦-୯]") thenSend("୦"))
+  ||Send("0")
+  
+$1::InCase(Map("\ ୧"))
+  ||InCase(After("[୦-୯]") thenSend("୧"))
+  ||Send("1")
+  
+$2::InCase(Map("\ ୨"))
+  ||InCase(After("[୦-୯]") thenSend("୨"))
+  ||Send("2")
+  
+$3::InCase(Map("\ ୩"))
+  ||InCase(After("[୦-୯]") thenSend("୩"))
+  ||Send("3")
+  
+$4::InCase(Map("\ ୪"))
+  ||InCase(After("[୦-୯]") thenSend("୪"))
+  ||Send("4")
+  
+$5::InCase(Map("\ ୫"))
+  ||InCase(After("[୦-୯]") thenSend("୫"))
+  ||Send("5")
+  
+$6::InCase(Map("\ ୬"))
+  ||InCase(After("[୦-୯]") thenSend("୬"))
+  ||Send("6")
+  
+$7::InCase(Map("\ ୭"))
+  ||InCase(After("[୦-୯]") thenSend("୭"))
+  ||Send("7")
+  
+$8::InCase(Map("\ ୮"))
+  ||InCase(After("[୦-୯]") thenSend("୮"))
+  ||Send("8")
+  
+$9::InCase(Map("\ ୯"))
+  ||InCase(After("[୦-୯]") thenSend("୯"))
+  ||Send("9")
+  
