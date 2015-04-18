@@ -87,26 +87,63 @@ $l::InCase(After(OryaCons) thenSend("୍ଳ"))
 $+l::InCase(After(OryaCons) thenSend("୍ଲ"))
   ||Send("ଲ")
   
+$q::InCase(After(OryaCons) thenSend("୍ଡ଼"))
+  ||Send("ଡ଼")
+
+$+q::InCase(After(OryaCons) thenSend("୍ଢ଼"))
+  ||Send("ଢ଼")
+
+$w::Beep()
+
+$+w::Send("****")
+  
 $e::InCase(After(OryaCons) thenSend("େ"))
   ||Send("ଏ")
-
-$i::InCase(After(OryaCons) thenSend("ି"))
-  ||Send("ଇ")
-
-$o::InCase(After(OryaCons) thenSend("ୋ"))
-  ||Send("ଓ")
-
-$u::InCase(After(OryaCons) thenSend("ୁ"))
-  ||Send("ଉ")
 
 $+e::InCase(After(OryaCons) thenSend("ୈ"))
   ||Send("ଐ")
 
-$+o::InCase(After(OryaCons) thenSend("ୌ"))
-  ||Send("ଔ")
+$r::InCase(After(OryaCons) thenSend("୍ର"))
+  ||Send("ର")
+
+$+r::InCase(After(OryaCons) thenSend("୍ଋ"))
+  ||Send("ଋ")
+
+$t::InCase(After(OryaCons) thenSend("୍ତ"))
+  ||Send("ତ")
+
+$+t::InCase(After(OryaCons) thenSend("୍ଟ"))
+  ||Send("ଟ")
+
+$y::InCase(After(OryaCons) thenSend("୍ଯ"))
+  ||Send("ଯ")
+
+$+y::InCase(After(OryaCons) thenSend("୍ୟ"))
+  ||Send("ୟ")
+
+$u::InCase(After(OryaCons) thenSend("ୁ"))
+  ||Send("ଉ")
 
 $+u::InCase(After(OryaCons) thenSend("ୂ"))
   ||Send("ଊ")
+
+$i::InCase(After(OryaCons) thenSend("ି"))
+  ||Send("ଇ")
+
+$+i::InCase(After(OryaCons) thenSend("ୀ"))
+  ||Send("ଈ")
+
+$o::InCase(After(OryaCons) thenSend("ୋ"))
+  ||Send("ଓ")
+
+$+o::InCase(After(OryaCons) thenSend("ୌ"))
+  ||Send("ଔ")
+
+$p::InCase(After(OryaCons) thenSend("୍ପ"))
+  ||Send("ପ")
+
+$+p::InCase(After(OryaCons) thenSend("୍ଫ"))
+  ||Send("ଫ")
 
 $c::InCase(After(OryaCons) thenSend("୍ଚ"))
   ||Send("ଚ")
