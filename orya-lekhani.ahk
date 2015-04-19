@@ -27,10 +27,7 @@ OnLoadScript:	; InKeyLib will call this subroutine just once, when the script is
 OryaCons := "[କ-ହ]"
 
 /*
-	usingMapChillu2Base := usingMap("ൻ ന", "ൺ ണ", "ർ ര", "ൽ ല", "ൾ ള", "ൿ ക", "ം മ", "ഋ റ")
-	SetOfLettersExceptSA := "[അ-ഷഹ]"
-	SetOfRegularLettersAndVowelSigns := "[അ-ഹഺാ-ൌൗൠ-ൣ]"
-	Chillu := "[ൺ-ൿ]" ;No need for a ZWNJ between Chillu and Full letters. Keymagic Rule: $chills[*] + U200C + $cDirectSmallKeys[*] => $1 + $cDirectSmallValues[$3] + '്'
+	ZWJ   := Char(0x200D)
 	ZWNJ := Char(0x200C)
 */
 return
